@@ -21,8 +21,8 @@ class School
   end
   
   def sort
-    @roster.each_with_index do |k, v|
-      temp = v.sort
+    @roster.each_pair do |k, v|
+      temp = k.sort
       @roster[k] = temp
     end
     @roster
