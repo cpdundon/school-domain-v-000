@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.each_pair do |k, v|
-      temp = k.sort
+      temp = v.sort
       @roster[k] = temp
     end
     @roster
