@@ -19,4 +19,12 @@ class School
   def grade(grade)
     @roster[grade]
   end
+  
+  def sort
+    @roster.each_with_index do |k, v|
+      temp = v.sort
+      @roster[k] = temp
+    end
+    @roster
+  end
 end
