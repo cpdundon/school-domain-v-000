@@ -8,9 +8,10 @@ class School
   
   def roster=(name, grade)
     if roster[grade]
-      roster[grade] << name
+      roster[grade] = name
     else
-      roster[grade] << [name]
+      roster[grade] = [name]
     end
+    roster
   end
 end
